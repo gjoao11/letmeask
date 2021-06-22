@@ -13,7 +13,7 @@
 
 ## :bookmark_tabs: Table of contents
 
-- [About](#page_facing-_p-about)
+- [About](#page_facing_up-about)
 - [Technologies](#test_tube-technologies)
 - [Getting started](#computer-getting-started)
 - [License](#memo-license)
