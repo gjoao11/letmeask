@@ -8,7 +8,7 @@ import { Button } from '../components/Button';
 import { database } from '../services/firebase';
 import { useAuth } from '../hooks/useAuth';
 
-import '../styles/auth.scss';
+import { PageAuthContainer } from '../styles/pages/auth';
 
 export function NewRoom() {
   const { user } = useAuth();
@@ -27,13 +27,13 @@ export function NewRoom() {
     const firebaseRoom = await roomRef.push({
       title: newRoom,
       authorId: user?.id
-    })
+    });
 
-    history.push(`/rooms/${firebaseRoom.key}`)
+    history.push(`/admin/rooms/${firebaseRoom.key}`);
   }
 
   return (
-    <div id="page-auth">
+    <PageAuthContainer id="page-auth">
       <aside>
         <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
@@ -59,6 +59,6 @@ export function NewRoom() {
           </p>
         </div>
       </main>
-    </div>
+    </PageAuthContainer>
   )
 }

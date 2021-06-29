@@ -10,7 +10,7 @@ import { database } from '../services/firebase';
 import { Button } from '../components/Button';
 import { useAuth } from '../hooks/useAuth';
 
-import '../styles/auth.scss';
+import { PageAuthContainer } from '../styles/pages/auth';
 
 export function Home() {
   const history = useHistory();
@@ -49,7 +49,7 @@ export function Home() {
   }
 
   return (
-    <div id="page-auth">
+    <PageAuthContainer id="page-auth">
       <aside>
         <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
@@ -76,6 +76,6 @@ export function Home() {
           </form>
         </div>
       </main>
-    </div>
+    </PageAuthContainer>
   )
 }

@@ -6,11 +6,12 @@ import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button';
 import { Question } from '../components/Question';
 import { RoomCode } from '../components/RoomCode';
+import { ThemeSwitchButton } from '../components/ThemeSwitchButton';
 import { useAuth } from '../hooks/useAuth';
 import { useRoom } from '../hooks/useRoom';
 import { database } from '../services/firebase';
 
-import '../styles/room.scss';
+import { PageRoomContainer } from '../styles/pages/room';
 
 type RoomParams = {
   id: string;
@@ -60,11 +61,14 @@ export function Room() {
   }
 
   return (
-    <div id="page-room">
+    <PageRoomContainer id="page-room">
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
-          <RoomCode code={roomId} />
+          <div>
+            <RoomCode code={roomId} />
+            <ThemeSwitchButton />
+          </div>
         </div>
       </header>
 
@@ -125,6 +129,6 @@ export function Room() {
           })}
         </div>
       </main>
-    </div>
+    </PageRoomContainer>
   );
 }
