@@ -18,8 +18,6 @@
 - [Getting started](#computer-getting-started)
 - [License](#memo-license)
 
----
-
 ## :page_facing_up: About
 
 #### Layout on Figma: [Letmeask – Figma](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate)
