@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/assets/images/logo.svg">
+  <img src=".github/logo.svg">
 </div>
 
 <h3 align="center">
@@ -23,6 +23,8 @@
 ## :page_facing_up: About
 
 #### Layout on Figma: [Letmeask – Figma](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate)
+
+![cover](.github/Capa.png)
 
 ## :test_tube: Technologies
 
@@ -54,6 +56,18 @@
   
   # Access the application in the browser
   http://localhost:3000
+```
+
+> It is necessary to create a Firebase Realtime Database and add the settings in an .env file.
+
+```bash
+  REACT_APP_API_KEY="API Key"
+  REACT_APP_AUTH_DOMAIN="Auth Domain"
+  REACT_APP_DATABASE_URL="Database URL"
+  REACT_APP_PROJECT_ID="Project ID"
+  REACT_APP_STORAGE_BUCKET="Storage Bucket"
+  REACT_APP_MESSAGING_SENDER_ID="Messaging Sender ID"
+  REACT_APP_APP_ID="APP ID"
 ```
 
 ## 	:memo: License
